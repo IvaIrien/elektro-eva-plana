@@ -3,45 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elektro Eva – Planá | Domácí elektrospotřebiče a potřeby</title>
-  <meta name="description" content="Elektro Eva v Plané – prodej domácích elektrospotřebičů, elektroniky a domácích potřeb. Sběrna Fotolab. náměstí Svobody 3, Planá.">
+  <title>Elektro Eva – Planá | Domácí elektrospotřebiče</title>
+  <meta name="description" content="Elektro Eva v Plané – prodejna domácích elektrospotřebičů a potřeb. náměstí Svobody 3.">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <style>
-    .hero-bg {
-      background: linear-gradient(135deg, rgba(30, 64, 175, 0.85), rgba(59, 130, 246, 0.75)),
-                  url('https://d48-a.sdn.cz/d_48/c_img_gV_e/imom6.jpeg?fl=res,1200,900,1') center/cover no-repeat;
+    :root {
+      --blue: #0f2c5c;
+      --yellow: #f5c518;
     }
+    .bg-brand-blue { background-color: var(--blue); }
+    .text-brand-blue { color: var(--blue); }
+    .bg-brand-yellow { background-color: var(--yellow); }
+    .text-brand-yellow { color: var(--yellow); }
+    .border-brand-yellow { border-color: var(--yellow); }
   </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-white text-gray-800 font-sans">
   <!-- Navigation -->
-  <nav class="bg-white shadow-md sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-      <div class="text-2xl font-bold text-blue-700">ELEKTRO <span class="text-blue-500">EVA</span></div>
-      <div class="hidden md:flex space-x-6">
-        <a href="#o-nas" class="hover:text-blue-600">O nás</a>
-        <a href="#sortiment" class="hover:text-blue-600">Sortiment</a>
-        <a href="#oteviraci-doba" class="hover:text-blue-600">Otevírací doba</a>
-        <a href="#kontakt" class="hover:text-blue-600">Kontakt</a>
+  <nav class="bg-brand-blue text-white sticky top-0 z-50 shadow-lg">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <div class="text-2xl font-bold">
+          <span class="text-brand-yellow">⚡</span> Elektro <span class="text-brand-yellow">Eva</span>
+        </div>
       </div>
-      <a href="tel:+420374794893" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 md:hidden">
-        <i class="fas fa-phone"></i> Zavolat
+      <div class="hidden md:flex space-x-8">
+        <a href="#o-nas" class="hover:text-brand-yellow transition">O nás</a>
+        <a href="#sortiment" class="hover:text-brand-yellow transition">Sortiment</a>
+        <a href="#oteviraci-doba" class="hover:text-brand-yellow transition">Otevírací doba</a>
+        <a href="#kontakt" class="hover:text-brand-yellow transition">Kontakt</a>
+      </div>
+      <a href="tel:+420374794893" class="bg-brand-yellow text-brand-blue px-5 py-2 rounded-full font-semibold hover:bg-yellow-400 transition">
+        <i class="fas fa-phone mr-1"></i> Zavolat
       </a>
     </div>
   </nav>
 
   <!-- Hero -->
-  <header class="hero-bg text-white py-24 md:py-32">
+  <header class="bg-gradient-to-br from-brand-blue to-blue-900 text-white py-20 md:py-28">
     <div class="max-w-6xl mx-auto px-4 text-center">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4">Elektro Eva</h1>
-      <p class="text-xl md:text-2xl mb-6">Váš spolehlivý obchod s domácími elektrospotřebiči v Plané</p>
-      <p class="text-lg opacity-90 mb-8">náměstí Svobody 3, 348 15 Planá</p>
-      <div class="space-x-4">
-        <a href="tel:+420374794893" class="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 inline-block">
+      <div class="mb-6">
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight">
+          Elektro <span class="text-brand-yellow">Eva</span>
+        </h1>
+        <p class="text-xl md:text-2xl mt-2 text-yellow-100 font-light">Prodejna elektrospotřebičů</p>
+      </div>
+      <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8 opacity-90">
+        Váš místní obchod s domácími elektrospotřebiči a potřebami na náměstí Svobody v Plané.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:+420374794893" class="bg-brand-yellow text-brand-blue px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-400 transition shadow-lg">
           <i class="fas fa-phone mr-2"></i>+420 374 794 893
         </a>
-        <a href="#kontakt" class="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-700 inline-block">
+        <a href="#kontakt" class="border-2 border-brand-yellow text-brand-yellow px-8 py-4 rounded-full font-bold text-lg hover:bg-brand-yellow hover:text-brand-blue transition">
           Jak nás najdete
         </a>
       </div>
@@ -49,28 +64,28 @@
   </header>
 
   <!-- O nás -->
-  <section id="o-nas" class="py-16 bg-white">
+  <section id="o-nas" class="py-20 bg-gray-50">
     <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-10 text-blue-800">O nás</h2>
-      <div class="grid md:grid-cols-2 gap-10 items-center">
+      <h2 class="text-4xl font-bold text-center mb-12 text-brand-blue">O nás</h2>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
         <div>
-          <p class="text-lg mb-4">
-            Vítejte v obchodě <strong>Elektro Eva</strong> na náměstí Svobody v Plané. Jsme místní prodejna domácích elektrospotřebičů, elektroniky a praktických domácích potřeb.
+          <p class="text-lg mb-6 leading-relaxed">
+            Vítejte v obchodě <strong class="text-brand-blue">Elektro Eva</strong> na náměstí Svobody v Plané. Jsme místní prodejna domácích elektrospotřebičů, elektroniky a praktických domácích potřeb.
           </p>
-          <p class="text-lg mb-4">
+          <p class="text-lg mb-6 leading-relaxed">
             Nabízíme slušný výběr zboží, přátelskou obsluhu a možnost nákupu na splátky. V obchodě můžete nakoupit se psem – jsme dog-friendly!
           </p>
-          <p class="text-lg">
+          <p class="text-lg leading-relaxed">
             Poskytujeme také <strong>sběrnu Fotolabu</strong> a přijímáme platby kartou. Parkování je k dispozici v blízkosti.
           </p>
-          <div class="mt-6 flex flex-wrap gap-3">
-            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"><i class="fas fa-credit-card mr-1"></i> Platba kartou</span>
-            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"><i class="fas fa-money-bill-wave mr-1"></i> Splátky</span>
-            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"><i class="fas fa-parking mr-1"></i> Parkoviště</span>
-            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"><i class="fas fa-dog mr-1"></i> Dog-friendly</span>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <span class="bg-brand-yellow text-brand-blue px-4 py-2 rounded-full text-sm font-semibold"><i class="fas fa-credit-card mr-1"></i> Platba kartou</span>
+            <span class="bg-brand-yellow text-brand-blue px-4 py-2 rounded-full text-sm font-semibold"><i class="fas fa-money-bill-wave mr-1"></i> Splátky</span>
+            <span class="bg-brand-yellow text-brand-blue px-4 py-2 rounded-full text-sm font-semibold"><i class="fas fa-parking mr-1"></i> Parkoviště</span>
+            <span class="bg-brand-yellow text-brand-blue px-4 py-2 rounded-full text-sm font-semibold"><i class="fas fa-dog mr-1"></i> Dog-friendly</span>
           </div>
         </div>
-        <div class="rounded-xl overflow-hidden shadow-lg">
+        <div class="rounded-2xl overflow-hidden shadow-2xl">
           <img src="https://d48-a.sdn.cz/d_48/c_img_gV_e/imom6.jpeg?fl=res,1200,900,1" alt="Prodejna Elektro Eva v Plané" class="w-full h-auto object-cover">
         </div>
       </div>
@@ -78,116 +93,113 @@
   </section>
 
   <!-- Sortiment -->
-  <section id="sortiment" class="py-16 bg-gray-50">
+  <section id="sortiment" class="py-20 bg-white">
     <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-10 text-blue-800">Co u nás najdete</h2>
+      <h2 class="text-4xl font-bold text-center mb-12 text-brand-blue">Co u nás najdete</h2>
       <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-          <div class="text-blue-600 text-4xl mb-4"><i class="fas fa-blender"></i></div>
-          <h3 class="text-xl font-semibold mb-2">Domácí elektrospotřebiče</h3>
-          <p>Mixéry, kávovary, vysavače, žehličky a další malé i větší spotřebiče pro domácnost.</p>
+        <div class="bg-gray-50 p-8 rounded-2xl shadow-md hover:shadow-xl transition border-t-4 border-brand-yellow">
+          <div class="text-brand-yellow text-5xl mb-4"><i class="fas fa-blender"></i></div>
+          <h3 class="text-2xl font-semibold mb-3 text-brand-blue">Domácí elektrospotřebiče</h3>
+          <p class="text-gray-600">Mixéry, kávovary, vysavače, žehličky a další malé i větší spotřebiče pro domácnost.</p>
         </div>
-        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-          <div class="text-blue-600 text-4xl mb-4"><i class="fas fa-tv"></i></div>
-          <h3 class="text-xl font-semibold mb-2">Elektronika</h3>
-          <p>Reproduktory, rádia, malá elektronika a doplňky. Přijďte se podívat na aktuální nabídku.</p>
+        <div class="bg-gray-50 p-8 rounded-2xl shadow-md hover:shadow-xl transition border-t-4 border-brand-yellow">
+          <div class="text-brand-yellow text-5xl mb-4"><i class="fas fa-tv"></i></div>
+          <h3 class="text-2xl font-semibold mb-3 text-brand-blue">Elektronika</h3>
+          <p class="text-gray-600">Reproduktory, rádia, malá elektronika a doplňky. Přijďte se podívat na aktuální nabídku.</p>
         </div>
-        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-          <div class="text-blue-600 text-4xl mb-4"><i class="fas fa-home"></i></div>
-          <h3 class="text-xl font-semibold mb-2">Domácí potřeby</h3>
-          <p>Praktické věci do domácnosti, které usnadní každodenní život.</p>
+        <div class="bg-gray-50 p-8 rounded-2xl shadow-md hover:shadow-xl transition border-t-4 border-brand-yellow">
+          <div class="text-brand-yellow text-5xl mb-4"><i class="fas fa-home"></i></div>
+          <h3 class="text-2xl font-semibold mb-3 text-brand-blue">Domácí potřeby</h3>
+          <p class="text-gray-600">Praktické věci do domácnosti, které usnadní každodenní život.</p>
         </div>
-        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition md:col-span-3 text-center">
-          <div class="text-blue-600 text-4xl mb-4"><i class="fas fa-camera"></i></div>
-          <h3 class="text-xl font-semibold mb-2">Sběrna Fotolab</h3>
-          <p>Můžete u nás odevzdat filmy a fotografie ke zpracování v síti Fotolab.</p>
-        </div>
+      </div>
+      <div class="mt-8 bg-brand-blue text-white p-8 rounded-2xl text-center">
+        <div class="text-brand-yellow text-5xl mb-4"><i class="fas fa-camera"></i></div>
+        <h3 class="text-2xl font-semibold mb-2">Sběrna Fotolab</h3>
+        <p>Můžete u nás odevzdat filmy a fotografie ke zpracování v síti Fotolab.</p>
       </div>
     </div>
   </section>
 
   <!-- Otevírací doba -->
-  <section id="oteviraci-doba" class="py-16 bg-white">
+  <section id="oteviraci-doba" class="py-20 bg-gray-50">
     <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-10 text-blue-800">Otevírací doba</h2>
-      <div class="bg-gray-50 rounded-xl overflow-hidden shadow">
+      <h2 class="text-4xl font-bold text-center mb-12 text-brand-blue">Otevírací doba</h2>
+      <div class="bg-white rounded-2xl overflow-hidden shadow-xl">
         <table class="w-full text-left">
-          <thead class="bg-blue-600 text-white">
+          <thead class="bg-brand-blue text-white">
             <tr>
-              <th class="px-6 py-3">Den</th>
-              <th class="px-6 py-3">Otevírací doba</th>
+              <th class="px-6 py-4 text-lg">Den</th>
+              <th class="px-6 py-4 text-lg">Otevírací doba</th>
             </tr>
           </thead>
-          <tbody class="divide-y divide-gray-200">
-            <tr><td class="px-6 py-4 font-medium">Pondělí</td><td class="px-6 py-4">8:00–12:00, 13:00–17:00</td></tr>
-            <tr class="bg-gray-50"><td class="px-6 py-4 font-medium">Úterý</td><td class="px-6 py-4">8:00–12:00, 13:00–17:00</td></tr>
-            <tr><td class="px-6 py-4 font-medium">Středa</td><td class="px-6 py-4">8:00–12:00, 13:00–17:00</td></tr>
-            <tr class="bg-gray-50"><td class="px-6 py-4 font-medium">Čtvrtek</td><td class="px-6 py-4">8:00–12:00, 13:00–17:00</td></tr>
-            <tr><td class="px-6 py-4 font-medium">Pátek</td><td class="px-6 py-4">8:00–12:00, 13:00–17:00</td></tr>
-            <tr class="bg-gray-50"><td class="px-6 py-4 font-medium">Sobota</td><td class="px-6 py-4">8:30–11:00</td></tr>
-            <tr><td class="px-6 py-4 font-medium">Neděle</td><td class="px-6 py-4 text-red-600">Zavřeno</td></tr>
+          <tbody class="divide-y divide-gray-100">
+            <tr class="hover:bg-yellow-50"><td class="px-6 py-4 font-medium">Pondělí</td><td class="px-6 py-4">8:00–12:00, 13:00–17:00</td></tr>
+            <tr class="hover:bg-yellow-50"><td class="px-6 py-4 font-medium">Úterý</td><td class="px-6 py-4">8:00–12:00, 13:00–17:00</td></tr>
+            <tr class="hover:bg-yellow-50"><td class="px-6 py-4 font-medium">Středa</td><td class="px-6 py-4">8:00–12:00, 13:00–17:00</td></tr>
+            <tr class="hover:bg-yellow-50"><td class="px-6 py-4 font-medium">Čtvrtek</td><td class="px-6 py-4">8:00–12:00, 13:00–17:00</td></tr>
+            <tr class="hover:bg-yellow-50"><td class="px-6 py-4 font-medium">Pátek</td><td class="px-6 py-4">8:00–12:00, 13:00–17:00</td></tr>
+            <tr class="hover:bg-yellow-50"><td class="px-6 py-4 font-medium">Sobota</td><td class="px-6 py-4">8:30–11:00</td></tr>
+            <tr class="hover:bg-yellow-50"><td class="px-6 py-4 font-medium text-red-600">Neděle</td><td class="px-6 py-4 text-red-600">Zavřeno</td></tr>
           </tbody>
         </table>
       </div>
-      <p class="text-center text-sm text-gray-500 mt-4">Otevírací doba se může ve státní svátky lišit. Doporučujeme zavolat.</p>
+      <p class="text-center text-sm text-gray-500 mt-6">Otevírací doba se může ve státní svátky lišit. Doporučujeme zavolat.</p>
     </div>
   </section>
 
   <!-- Kontakt -->
-  <section id="kontakt" class="py-16 bg-gray-50">
+  <section id="kontakt" class="py-20 bg-white">
     <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-10 text-blue-800">Kontakt</h2>
-      <div class="grid md:grid-cols-2 gap-10">
-        <div>
-          <div class="space-y-6">
-            <div class="flex items-start">
-              <i class="fas fa-map-marker-alt text-blue-600 text-2xl mt-1 mr-4"></i>
-              <div>
-                <h3 class="font-semibold text-lg">Adresa</h3>
-                <p>náměstí Svobody 3<br>348 15 Planá<br>Česká republika</p>
-              </div>
+      <h2 class="text-4xl font-bold text-center mb-12 text-brand-blue">Kontakt</h2>
+      <div class="grid md:grid-cols-2 gap-12">
+        <div class="space-y-8">
+          <div class="flex items-start">
+            <i class="fas fa-map-marker-alt text-brand-yellow text-3xl mt-1 mr-4"></i>
+            <div>
+              <h3 class="font-semibold text-xl text-brand-blue">Adresa</h3>
+              <p class="text-lg">náměstí Svobody 3<br>348 15 Planá<br>Česká republika</p>
             </div>
-            <div class="flex items-start">
-              <i class="fas fa-phone text-blue-600 text-2xl mt-1 mr-4"></i>
-              <div>
-                <h3 class="font-semibold text-lg">Telefon</h3>
-                <a href="tel:+420374794893" class="text-blue-600 hover:underline">+420 374 794 893</a>
-              </div>
+          </div>
+          <div class="flex items-start">
+            <i class="fas fa-phone text-brand-yellow text-3xl mt-1 mr-4"></i>
+            <div>
+              <h3 class="font-semibold text-xl text-brand-blue">Telefon</h3>
+              <a href="tel:+420374794893" class="text-lg text-brand-blue hover:underline">+420 374 794 893</a>
             </div>
-            <div class="flex items-start">
-              <i class="fas fa-envelope text-blue-600 text-2xl mt-1 mr-4"></i>
-              <div>
-                <h3 class="font-semibold text-lg">E-mail</h3>
-                <a href="mailto:elektro.eva@seznam.cz" class="text-blue-600 hover:underline">elektro.eva@seznam.cz</a>
-              </div>
+          </div>
+          <div class="flex items-start">
+            <i class="fas fa-envelope text-brand-yellow text-3xl mt-1 mr-4"></i>
+            <div>
+              <h3 class="font-semibold text-xl text-brand-blue">E-mail</h3>
+              <a href="mailto:elektro.eva@seznam.cz" class="text-lg text-brand-blue hover:underline">elektro.eva@seznam.cz</a>
             </div>
-            <div class="flex items-start">
-              <i class="fas fa-id-card text-blue-600 text-2xl mt-1 mr-4"></i>
-              <div>
-                <h3 class="font-semibold text-lg">IČO</h3>
-                <p>72215771</p>
-              </div>
+          </div>
+          <div class="flex items-start">
+            <i class="fas fa-id-card text-brand-yellow text-3xl mt-1 mr-4"></i>
+            <div>
+              <h3 class="font-semibold text-xl text-brand-blue">IČO</h3>
+              <p class="text-lg">72215771</p>
             </div>
           </div>
         </div>
         <div>
           <iframe
-            src="https://maps.google.com/maps?q=náměstí+Svobody+3,+348+15+Planá&output=embed"
-            width="100%" height="300" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy"
-            class="shadow-lg">
+            src="https://maps.google.com/maps?q=náměstí+Svobody+3,+348+15+Planá&amp;output=embed"
+            width="100%" height="350" style="border:0; border-radius: 16px;" allowfullscreen="" loading="lazy"
+            class="shadow-2xl">
           </iframe>
-          <p class="text-sm text-gray-500 mt-2 text-center">Mapa pro orientaci – přesnou polohu najdete na náměstí Svobody 3</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-blue-900 text-white py-8">
+  <footer class="bg-brand-blue text-white py-12">
     <div class="max-w-6xl mx-auto px-4 text-center">
-      <p class="text-xl font-bold mb-2">Elektro Eva</p>
-      <p class="opacity-80">náměstí Svobody 3, 348 15 Planá &nbsp;|&nbsp; +420 374 794 893</p>
-      <p class="text-sm opacity-60 mt-4">© 2026 Elektro Eva. Všechna práva vyhrazena.</p>
+      <p class="text-3xl font-bold mb-2">Elektro <span class="text-brand-yellow">Eva</span></p>
+      <p class="opacity-80 text-lg">náměstí Svobody 3, 348 15 Planá &nbsp;|&nbsp; +420 374 794 893</p>
+      <p class="text-sm opacity-60 mt-6">© 2026 Elektro Eva. Všechna práva vyhrazena.</p>
     </div>
   </footer>
 </body>
