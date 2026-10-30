@@ -17,6 +17,21 @@
     .bg-brand-yellow { background-color: var(--yellow); }
     .text-brand-yellow { color: var(--yellow); }
     .border-brand-yellow { border-color: var(--yellow); }
+
+    .card-hover {
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px -10px rgba(15, 44, 92, 0.15);
+    }
+    .card-hover:hover .icon-wrapper {
+      transform: scale(1.1);
+      background-color: var(--yellow);
+    }
+    .card-hover:hover .icon-wrapper i {
+      color: var(--blue);
+    }
   </style>
 </head>
 <body class="bg-white text-gray-800 font-sans">
@@ -102,26 +117,35 @@
     <div class="max-w-6xl mx-auto px-4">
       <h2 class="text-4xl font-bold text-center mb-12 text-brand-blue">Co u nás najdete</h2>
       <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-gray-50 p-8 rounded-2xl shadow-md hover:shadow-xl transition border-t-4 border-brand-yellow">
-          <div class="text-brand-yellow text-5xl mb-4"><i class="fas fa-blender"></i></div>
+        <div class="card-hover bg-white p-8 rounded-3xl shadow-lg border border-gray-100 relative overflow-hidden group">
+          <div class="absolute top-0 left-0 w-full h-1 bg-brand-yellow"></div>
+          <div class="icon-wrapper w-16 h-16 rounded-2xl bg-yellow-100 flex items-center justify-center mb-6 transition-all duration-300">
+            <i class="fas fa-blender text-3xl text-brand-yellow"></i>
+          </div>
           <h3 class="text-2xl font-semibold mb-3 text-brand-blue">Domácí elektrospotřebiče</h3>
-          <p class="text-gray-600">Mixéry, kávovary, vysavače, žehličky a další malé i větší spotřebiče pro domácnost.</p>
+          <p class="text-gray-600 leading-relaxed">Mixéry, kávovary, vysavače, žehličky a další malé i větší spotřebiče pro domácnost.</p>
         </div>
-        <div class="bg-gray-50 p-8 rounded-2xl shadow-md hover:shadow-xl transition border-t-4 border-brand-yellow">
-          <div class="text-brand-yellow text-5xl mb-4"><i class="fas fa-tv"></i></div>
+        <div class="card-hover bg-white p-8 rounded-3xl shadow-lg border border-gray-100 relative overflow-hidden group">
+          <div class="absolute top-0 left-0 w-full h-1 bg-brand-yellow"></div>
+          <div class="icon-wrapper w-16 h-16 rounded-2xl bg-yellow-100 flex items-center justify-center mb-6 transition-all duration-300">
+            <i class="fas fa-tv text-3xl text-brand-yellow"></i>
+          </div>
           <h3 class="text-2xl font-semibold mb-3 text-brand-blue">Elektronika</h3>
-          <p class="text-gray-600">Reproduktory, rádia, malá elektronika a doplňky. Přijďte se podívat na aktuální nabídku.</p>
+          <p class="text-gray-600 leading-relaxed">Reproduktory, rádia, malá elektronika a doplňky. Přijďte se podívat na aktuální nabídku.</p>
         </div>
-        <div class="bg-gray-50 p-8 rounded-2xl shadow-md hover:shadow-xl transition border-t-4 border-brand-yellow">
-          <div class="text-brand-yellow text-5xl mb-4"><i class="fas fa-home"></i></div>
+        <div class="card-hover bg-white p-8 rounded-3xl shadow-lg border border-gray-100 relative overflow-hidden group">
+          <div class="absolute top-0 left-0 w-full h-1 bg-brand-yellow"></div>
+          <div class="icon-wrapper w-16 h-16 rounded-2xl bg-yellow-100 flex items-center justify-center mb-6 transition-all duration-300">
+            <i class="fas fa-home text-3xl text-brand-yellow"></i>
+          </div>
           <h3 class="text-2xl font-semibold mb-3 text-brand-blue">Domácí potřeby</h3>
-          <p class="text-gray-600">Praktické věci do domácnosti, které usnadní každodenní život.</p>
+          <p class="text-gray-600 leading-relaxed">Praktické věci do domácnosti, které usnadní každodenní život.</p>
         </div>
       </div>
-      <div class="mt-8 bg-brand-blue text-white p-8 rounded-2xl text-center">
-        <div class="text-brand-yellow text-5xl mb-4"><i class="fas fa-sync-alt"></i></div>
-        <h3 class="text-2xl font-semibold mb-2">Výměna CO₂ bombíček Sodastream</h3>
-        <p>U nás vyměníte prázdné CO₂ bombíčky za plné pro váš Sodastream. Rychle, jednoduše a za výhodnou cenu.</p>
+      <div class="mt-12 bg-brand-blue text-white p-10 rounded-3xl text-center shadow-xl">
+        <div class="text-brand-yellow text-6xl mb-4"><i class="fas fa-sync-alt"></i></div>
+        <h3 class="text-3xl font-semibold mb-3">Výměna CO₂ bombíček Sodastream</h3>
+        <p class="text-lg opacity-90 max-w-2xl mx-auto">U nás vyměníte prázdné CO₂ bombíčky za plné pro váš Sodastream. Rychle, jednoduše a za výhodnou cenu.</p>
       </div>
     </div>
   </section>
