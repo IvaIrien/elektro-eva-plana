@@ -32,6 +32,14 @@
     .card-hover:hover .icon-wrapper i {
       color: var(--blue);
     }
+
+    .sodastream-icon {
+      display: inline-block;
+      transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .sodastream-box:hover .sodastream-icon {
+      transform: rotate(180deg) scale(1.15);
+    }
   </style>
 </head>
 <body class="bg-white text-gray-800 font-sans">
@@ -145,8 +153,8 @@
           <p class="text-gray-600 leading-relaxed">Praktické věci do domácnosti, které usnadní každodenní život.</p>
         </div>
       </div>
-      <div class="mt-12 bg-brand-blue text-white p-10 rounded-3xl text-center shadow-xl">
-        <div class="text-brand-yellow text-6xl mb-4"><i class="fas fa-sync-alt"></i></div>
+      <div class="mt-12 bg-brand-blue text-white p-10 rounded-3xl text-center shadow-xl sodastream-box">
+        <div class="text-brand-yellow text-6xl mb-4 sodastream-icon"><i class="fas fa-sync-alt"></i></div>
         <h3 class="text-3xl font-semibold mb-3">Výměna CO₂ bombíček Sodastream</h3>
         <p class="text-lg opacity-90 max-w-2xl mx-auto">U nás vyměníte prázdné CO₂ bombíčky za plné pro váš Sodastream. Rychle, jednoduše a za výhodnou cenu.</p>
       </div>
