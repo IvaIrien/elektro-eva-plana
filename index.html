@@ -163,28 +163,31 @@
 
   <!-- Otevírací doba -->
   <section id="oteviraci-doba" class="py-20 bg-gray-50">
-    <div class="max-w-4xl mx-auto px-4">
+    <div class="max-w-3xl mx-auto px-4">
       <h2 class="text-4xl font-bold text-center mb-12 text-brand-blue">Otevírací doba</h2>
-      <div class="bg-white rounded-2xl overflow-hidden shadow-xl">
-        <table class="w-full text-left">
-          <thead class="bg-brand-blue text-white">
-            <tr>
-              <th class="px-6 py-4 text-lg">Den</th>
-              <th class="px-6 py-4 text-lg">Otevírací doba</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-gray-100">
-            <tr class="hover:bg-yellow-50"><td class="px-6 py-4 font-medium">Pondělí</td><td class="px-6 py-4">8:00–12:00, 13:00–17:00</td></tr>
-            <tr class="hover:bg-yellow-50"><td class="px-6 py-4 font-medium">Úterý</td><td class="px-6 py-4">8:00–12:00, 13:00–17:00</td></tr>
-            <tr class="hover:bg-yellow-50"><td class="px-6 py-4 font-medium">Středa</td><td class="px-6 py-4">8:00–12:00, 13:00–17:00</td></tr>
-            <tr class="hover:bg-yellow-50"><td class="px-6 py-4 font-medium">Čtvrtek</td><td class="px-6 py-4">8:00–12:00, 13:00–17:00</td></tr>
-            <tr class="hover:bg-yellow-50"><td class="px-6 py-4 font-medium">Pátek</td><td class="px-6 py-4">8:00–12:00, 13:00–17:00</td></tr>
-            <tr class="hover:bg-yellow-50"><td class="px-6 py-4 font-medium">Sobota</td><td class="px-6 py-4">8:30–11:00</td></tr>
-            <tr class="hover:bg-yellow-50"><td class="px-6 py-4 font-medium text-red-600">Neděle</td><td class="px-6 py-4 text-red-600">Zavřeno</td></tr>
-          </tbody>
-        </table>
+      <div class="bg-white rounded-3xl shadow-2xl overflow-hidden">
+        <div class="bg-brand-blue text-white text-center py-6">
+          <i class="fas fa-clock text-3xl text-brand-yellow mb-2"></i>
+          <h3 class="text-2xl font-semibold">Kdy jsme otevřeni</h3>
+        </div>
+        <div class="divide-y divide-gray-100">
+          <div class="flex justify-between items-center px-8 py-5 hover:bg-yellow-50 transition">
+            <span class="font-semibold text-lg text-brand-blue">Pondělí – Pátek</span>
+            <span class="text-lg">8:00–12:00 &nbsp;•&nbsp; 13:00–17:00</span>
+          </div>
+          <div class="flex justify-between items-center px-8 py-5 hover:bg-yellow-50 transition">
+            <span class="font-semibold text-lg text-brand-blue">Sobota</span>
+            <span class="text-lg">8:30–11:00</span>
+          </div>
+          <div class="flex justify-between items-center px-8 py-5 hover:bg-red-50 transition">
+            <span class="font-semibold text-lg text-red-600">Neděle</span>
+            <span class="text-lg text-red-600 font-medium">Zavřeno</span>
+          </div>
+        </div>
+        <div class="bg-gray-50 text-center py-5 text-sm text-gray-600">
+          Otevírací doba se může ve státní svátky lišit. Doporučujeme zavolat.
+        </div>
       </div>
-      <p class="text-center text-sm text-gray-500 mt-6">Otevírací doba se může ve státní svátky lišit. Doporučujeme zavolat.</p>
     </div>
   </section>
 
